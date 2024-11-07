@@ -1,9 +1,6 @@
 spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:mem:test;MODE=MySQL
-    username: sa
-    password:
+  profiles:
+    active: dev
   jpa:
     hibernate:
       ddl-auto: create
@@ -12,6 +9,8 @@ spring:
         show_sql: true
         format_sql: true
         use_sql_comments: true
+  devtools:
+    enabled: false
 logging:
   level:
     root: INFO

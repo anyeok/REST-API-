@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 8090
 spring:
   thymeleaf:
     cache: false
@@ -8,6 +8,6 @@ spring:
       enabled: always
   datasource:
     url: jdbc:postgresql://localhost:5432/postgres
-    username: postgres
+    username: test
     password: 1234
     driver-class-name: org.postgresql.Driver
